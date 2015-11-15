@@ -1,6 +1,7 @@
 
 <?php
-include('session.php');
+include('profile.php');
+include('search.php');
 $db = mysql_connect('localhost', 'root', '') or
 die(mysql_error());
 mysql_select_db("library") or die(mysql_error());
@@ -80,14 +81,17 @@ echo'<form method="post"><dl>
       echo "</td><td>";
       echo($row[6]);
       echo "</td><td>";
+      if($row[6] == 'N'){
       echo('<form method="post"><input type="hidden" ');
       echo('name="isbn" value="'.$row[0].'"">'."\n");
-      echo('<input type="submit" value="res" name="edit">');
+      echo('<input type="submit" value="Reserve" name="edit">');
       echo("\n</form>\n");
+    }
 
       echo("</tr>\n");
     }
     echo "</table>\n";
 
   }
+  mysql_close($db);
 ?>

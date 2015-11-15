@@ -8,12 +8,12 @@ header("location: profile.php");
 <!DOCTYPE html>
 <html>
 <head>
-<title>Login Form in PHP with Session</title>
+<title>Library Login</title>
 <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <div id="main">
-<h1>PHP Login Session Example</h1>
+<h1>Please login</h1>
 <div id="login">
 <h2>Login Form</h2>
 <form action="" method="post">
@@ -28,3 +28,6 @@ header("location: profile.php");
 </div>
 </body>
 </html>
+<?php
+include('add_user.php');
+?>

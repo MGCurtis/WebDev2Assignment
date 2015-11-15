@@ -11,7 +11,8 @@ include('session.php');
 <div id="profile">
 <b id="welcome">Welcome : <i><?php echo $login_session; ?></i></b>
 <b id="logout"><a href="logout.php">Log Out</a></b>
-<b id="search"><a href="search_dropdown.php">search</a></b>
+<b id="search"><a href="search_dropdown.php">Search</a></b>
+<b id="reserved"><a href="reserved.php">Reserved</a></b>
 </div>
 </body>
 </html>
